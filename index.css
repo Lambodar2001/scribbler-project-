@@ -1,13 +1,15 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
-
 
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #f2f2f2;
+    padding: 10px;
 }
 
 .logo {
@@ -27,8 +29,8 @@
 }
 
 .btnUsercredintial .btn-signUp {
-    padding: 5px;
-    font-size: 15px;
+    padding: 8px 12px;
+    font-size: 16px;
     background-color: blue;
     color: white;
     font-weight: bold;
@@ -38,8 +40,8 @@
 }
 
 .btnUsercredintial .btn-signIn {
-    padding: 5px;
-    font-size: 15px;
+    padding: 8px 12px;
+    font-size: 16px;
     background-color: blue;
     color: white;
     font-weight: bold;
@@ -51,31 +53,30 @@
 .penmodal-content {
     background-color: #fefefe;
     margin: 15% auto;
-    /* 15% from the top and centered */
     padding: 20px;
     border: 1px solid #888;
     width: 80%;
+    max-width: 500px;
 }
 
 .btn-createPost {
     margin-top: 2%;
-    padding: 7px;
+    padding: 10px 15px;
     background-color: #7bcc7b;
     color: white;
     font-weight: bolder;
-    font-size: 15px;
+    font-size: 16px;
     border: none;
     cursor: pointer;
 }
 
-    
-.btnfex-container{
+.btnfex-container {
     display: flex;
     justify-content: center;
     margin-top: 25%;
-    
 }
-.btn-allPost{
+
+.btn-allPost {
     width: 10%;
     padding: 10px;
     background-color: #cad625;
@@ -85,7 +86,8 @@
     cursor: pointer;
     transition: 0.4s;
 }
-.btn-createPo{
+
+.btn-createPo {
     width: 10%;
     padding: 15px;
     background-color: #cad625;
@@ -93,15 +95,11 @@
     border: none;
     margin-right: 10px;
     cursor: pointer;
-   transition: 0.4s;
+    transition: 0.4s;
 }
-.btn-createPo:hover{
+
+.btn-createPo:hover, .btn-allPost:hover {
     background-color: rgb(103, 178, 208);
     font-size: 15px;
-    box-shadow: #888;
-}
-.btn-allPost:hover{
-    background-color: rgb(103, 178, 208);
-    font-size: 15px;
-    box-shadow: #888;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
